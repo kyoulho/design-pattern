@@ -13,6 +13,16 @@ class SimpleCoffee extends Beverage {
 
     @Override
     public double cost() {
-        return 3.0;
+        switch (size) {
+            case GRADE -> {
+                return 3.0;
+            }
+            case VENTI -> {
+                return 3.2;
+            }
+            default -> {
+                return 2.8;
+            }
+        }
     }
 }
