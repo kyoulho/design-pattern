@@ -4,7 +4,7 @@ package decorator;
 public class CoffeeShop {
     public static void main(String[] args) {
         // 기본 커피 생성
-        Coffee myCoffee = new SimpleCoffee();
+        Beverage myCoffee = new SimpleCoffee(Beverage.Size.TALL);
         System.out.println("기본 커피: " + myCoffee.getDescription() + ", 가격: $" + myCoffee.cost());
 
         // 휘핑 크림 추가

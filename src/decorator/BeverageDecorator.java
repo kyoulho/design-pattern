@@ -1,10 +1,11 @@
 package decorator;
 
 // Decorator
-abstract class CoffeeDecorator implements Coffee {
-    protected Coffee decoratedCoffee;
+abstract class BeverageDecorator extends Beverage {
+    protected Beverage decoratedCoffee;
 
-    public CoffeeDecorator(Coffee decoratedCoffee) {
+    public BeverageDecorator(Beverage decoratedCoffee) {
+        super(decoratedCoffee.getSize());
         this.decoratedCoffee = decoratedCoffee;
     }
 

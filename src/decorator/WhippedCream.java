@@ -1,7 +1,7 @@
 package decorator;
 
-class WhippedCream extends CoffeeDecorator {
-    public WhippedCream(Coffee decoratedCoffee) {
+class WhippedCream extends BeverageDecorator {
+    public WhippedCream(Beverage decoratedCoffee) {
         super(decoratedCoffee);
     }
 

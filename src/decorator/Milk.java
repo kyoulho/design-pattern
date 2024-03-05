@@ -1,8 +1,8 @@
 package decorator;
 
 // ConcreteDecorator
-class Milk extends CoffeeDecorator {
-    public Milk(Coffee decoratedCoffee) {
+class Milk extends BeverageDecorator {
+    public Milk(Beverage decoratedCoffee) {
         super(decoratedCoffee);
     }
 
