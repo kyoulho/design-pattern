@@ -1,7 +1,6 @@
 package factory;
 
-// DIP를 준수하기 위한 고수준 모듈
-abstract class LoggerFactory {
-
-    abstract Logger createLogger();
+// Logger 생성을 위한 추상 팩토리 인터페이스
+public interface LoggerFactory {
+    Logger createLogger();
 }

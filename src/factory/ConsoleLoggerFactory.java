@@ -1,9 +1,9 @@
 package factory;
 
-// 구체적인 로거를 생성하는 구체적인 팩토리
-class ConsoleLoggerFactory extends LoggerFactory {
+// 콘솔 로깅에 사용될 Logger를 생성하는 팩토리 클래스
+public class ConsoleLoggerFactory implements LoggerFactory {
     @Override
-    Logger createLogger() {
-        return new ConsoleLogger();  // 추상화에 의존
+    public Logger createLogger() {
+        return new ConsoleLogger();
     }
 }
